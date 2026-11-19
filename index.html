@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelamsetty Chaitanya | AI & Software Developer Portfolio</title>
+  
+  <!-- Typography matching reference: Bebas Neue, Playfair Display, Plus Jakarta Sans, Caveat & Syne -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating "Text Me" Action Button -->
+  <button class="floating-text-btn" id="floatingMsgBtn" aria-label="Send direct message">
+    <span class="floating-icon">💬</span>
+    <span class="floating-label">Text Me</span>
+  </button>
+
+  <!-- Outer Editorial Layout Container -->
+  <div class="portfolio-canvas">
+    
+    <!-- Left Vertical Edge Text -->
+    <aside class="vertical-sidebar left-sidebar" aria-hidden="true">
+      <span class="v-text">MACHINE LEARNING</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">FULL-STACK AI</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">PYTHON ARCHITECTURE</span>
+    </aside>
+
+    <!-- Right Vertical Edge Text -->
+    <aside class="vertical-sidebar right-sidebar" aria-hidden="true">
+      <span class="v-text">FASTAPI & REST APIS</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">SQLITE & SQLALCHEMY</span>
+      <span class="v-separator">/</span>
+      <span class="v-text">INTELLIGENT SYSTEMS</span>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+
+      <!-- Top Header Bar -->
+      <header class="top-nav">
+        <div class="nav-left">
+          <span class="asterisk-symbol">✻</span>
+          <span class="nav-tag">AI & SOFTWARE DEVELOPER</span>
+        </div>
+        <div class="nav-right">
+          <a href="#inquiry" class="nav-link" id="navInquiryBtn">
+            <span>AVAILABLE FOR OPPORTUNITIES</span>
+            <span class="nav-arrow">⟶</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Giant Center Display Title -->
+      <section class="banner-title-section">
+        <h1 class="giant-portfolio-title">PORTFOLIO</h1>
+      </section>
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-grid">
+          
+          <!-- Left Hero Column -->
+          <div class="hero-bio-col">
+            <span class="hero-greeting">HELLO, I'M</span>
+            <h2 class="hero-name">
+              <span>CHELAMSETTY</span>
+              <span>CHAITANYA</span>
+            </h2>
+            <div class="hero-role-pill">
+              AI & MACHINE LEARNING ENGINEER
+            </div>
+            <p class="hero-intro-text">
+              Motivated B.Tech AIML student with a strong interest in software development, 
+              artificial intelligence, and problem-solving. Possess practical experience developing 
+              full-stack AI-powered platforms, high-throughput backend APIs, and intelligent data systems.
+            </p>
+            <div class="hero-signature">
+              <span>Chelamsetty Chaitanya</span>
+            </div>
+            
+            <div class="hero-meta-strip">
+              <div class="meta-item">
+                <span class="meta-label">UNIVERSITY</span>
+                <span class="meta-value">Jain Deemed-to-be University</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">DEGREE</span>
+                <span class="meta-value">B.Tech AIML (2nd Year)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">LOCATION</span>
+                <span class="meta-value">Bengaluru, Karnataka</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Hero Column (Terracotta Arch / Circle + Photo Cutout + Revolving Stamp) -->
+          <div class="hero-portrait-col">
+            <div class="portrait-stage">
+              
+              <!-- Terracotta backdrop circle -->
+              <div class="terracotta-circle"></div>
+
+              <!-- Cutout Image of Chelamsetty Chaitanya -->
+              <img 
+                src="static/images/chaitanya.png" 
+                alt="Chelamsetty Chaitanya" 
+                class="chaitanya-photo"
+              >
+
+              <!-- Rotating Stamp Badge matching reference -->
+              <div class="rotating-badge-wrapper" id="badgeOpenModal" title="Click to Send a Message">
+                <div class="badge-inner-spin">
+                  <svg class="circular-text-svg" viewBox="0 0 200 200">
+                    <path id="badge-circle-path" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" fill="transparent" />
+                    <text class="badge-curved-text">
+                      <textPath href="#badge-circle-path" startOffset="0%">
+                        • AVAILABLE FOR OPPORTUNITIES • BENGALURU, INDIA 
+                      </textPath>
+                    </text>
+                  </svg>
+                  <div class="badge-center-content">
+                    <span class="badge-line-1">OPEN</span>
+                    <span class="badge-line-2">FOR NEW</span>
+                    <span class="badge-line-3">ROLES</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
+
+      <!-- SECTION 2: SELECTED PROJECTS -->
+      <section class="section selected-projects-section" id="projects">
+        <div class="section-header-row">
+          <div class="section-title-wrap">
+            <span class="title-sans">SELECTED</span>
+            <h2 class="title-serif">PROJECTS</h2>
+          </div>
+          <p class="section-subtitle">
+            A curated showcase of full-stack engineering, artificial intelligence, and algorithmic problem-solving.
+          </p>
+          <div class="section-action">
+            <a href="#inquiry" class="action-link">
+              <span>VIEW ALL MODULES</span>
+              <span class="nav-arrow">⟶</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4-Card Project Grid matching reference layout -->
+        <div class="projects-grid">
+          
+          <!-- Card 01 -->
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_1.jpg" alt="Career Compatibility Engine" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">WEIGHTED SCORING</span>
+                <p class="overlay-desc">Identifies skill gaps and matches student profiles with competitive industry roles.</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">01</span>
+              <div class="project-text">
+                <h3 class="project-title">Career Engine</h3>
+                <span class="project-category">AI Compatibility & Matching</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02 -->
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_2.jpg" alt="Intelligent Resume Parser" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">NLP & GEMINI API</span>
+                <p class="overlay-desc">PDF/DOCX extraction of skills, projects, and AI-tailored resume improvements.</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">02</span>
+              <div class="project-text">
+                <h3 class="project-title">Resume Parser</h3>
+                <span class="project-category">Gemini AI & Document NLP</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03 -->
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_3.jpg" alt="FastAPI Backend Core" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">JWT & SQLALCHEMY</span>
+                <p class="overlay-desc">Role-based access control, SQLite database schemas, and 15 automated test suites.</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">03</span>
+              <div class="project-text">
+                <h3 class="project-title">FastAPI Core</h3>
+                <span class="project-category">Backend APIs & Security</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 04 -->
+          <article class="project-card">
+            <div class="project-thumbnail-wrapper">
+              <img src="static/images/project_4.jpg" alt="Adaptive Learning Roadmaps" class="project-img">
+              <div class="project-overlay">
+                <span class="overlay-tag">MULTI-PORTAL SYSTEM</span>
+                <p class="overlay-desc">Personalized learning roadmaps, progress tracking, and recruiter-student pipelines.</p>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">04</span>
+              <div class="project-text">
+                <h3 class="project-title">Adaptive Roadmaps</h3>
+                <span class="project-category">Full-Stack Career Platform</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
+
+      <!-- SECTION 3: SKILLS & EXPERTISE -->
+      <section class="section skills-section" id="skills">
+        <div class="skills-3col-grid">
+          
+          <!-- Column 1: Skill Progress Bars -->
+          <div class="skills-col-progress">
+            <div class="col-title-wrap">
+              <span class="col-sub">SKILLS &</span>
+              <h3 class="col-serif-title">EXPERTISE</h3>
+            </div>
+            
+            <div class="skill-bars-list">
+              
+              <div class="skill-row">
+                <div class="skill-header">
+                  <span class="skill-name">PYTHON & FASTAPI</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-header">
+                  <span class="skill-name">JAVA & C PROGRAMMING</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-header">
+                  <span class="skill-name">AI & GEMINI API INTEGRATION</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-header">
+                  <span class="skill-name">SQLITE & SQLALCHEMY ORM</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-header">
+                  <span class="skill-name">HTML, CSS & TAILWIND CSS</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-row">
+                <div class="skill-header">
+                  <span class="skill-name">DOCKER & DEV TOOLS</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-fill" style="width: 82%;"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Large Central Editorial Quote -->
+          <div class="skills-col-quote">
+            <span class="giant-quote-mark">“</span>
+            <blockquote class="editorial-quote-text">
+              I architect and build full-stack intelligent systems that are not only computationally robust, but also scalable, secure, and impactful.
+            </blockquote>
+          </div>
+
+          <!-- Column 3: 4 Feature Items with Terracotta Icons -->
+          <div class="skills-col-features">
+            
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title">INTELLIGENT AI INTEGRATION</h4>
+                <p class="feature-desc">Google Gemini API pipelines with local NLP fallback for resilient automation.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title">ROBUST BACKEND APIS</h4>
+                <p class="feature-desc">High-throughput asynchronous services using Python, FastAPI, and SQLAlchemy.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title">ENTERPRISE SECURITY</h4>
+                <p class="feature-desc">JWT authentication, password hashing, and role-based access control (RBAC).</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-circle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                  <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                  <path d="M9 12H4s.55-3.03 2-4.5c1.45-1.47 4.5-2 4.5-2"/>
+                  <path d="M12 15v5s3.03-.55 4.5-2c1.47-1.45 2-4.5 2-4.5"/>
+                </svg>
+              </div>
+              <div class="feature-content">
+                <h4 class="feature-title">PERFORMANCE & QUALITY</h4>
+                <p class="feature-desc">15 automated test suites, Docker containerization, and data-driven scoring.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
+
+      <!-- SECTION 4: ACHIEVEMENTS & MILESTONES -->
+      <section class="section testimonials-section" id="milestones">
+        <div class="section-header-row">
+          <div class="section-title-wrap">
+            <span class="title-sans">ACHIEVEMENTS &</span>
+            <h2 class="title-serif">MILESTONES</h2>
+          </div>
+          <p class="section-subtitle">
+            Validated milestones, competitive hackathon performance, and consistent academic distinction.
+          </p>
+          <div class="section-action">
+            <a href="#inquiry" class="action-link">
+              <span>GET IN TOUCH</span>
+              <span class="nav-arrow">⟶</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Card 1: Smart India Hackathon -->
+          <div class="testimonial-card">
+            <span class="card-quote-mark">“</span>
+            <p class="card-quote-text">
+              Collaborated within a multidisciplinary team to conceptualize, architect, and pitch a technical software solution, successfully qualifying through the selection evaluation stage.
+            </p>
+            <div class="author-block">
+              <img src="static/images/badge_sih.png" alt="Smart India Hackathon" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Smart India Hackathon</h4>
+                <span class="author-title">Qualified Participant • National Level</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Academic Excellence -->
+          <div class="testimonial-card">
+            <span class="card-quote-mark">“</span>
+            <p class="card-quote-text">
+              Maintained strong academic performance with 8.625 SGPA in Semester 1 and 9.00 SGPA in Semester 2 in B.Tech Artificial Intelligence & Machine Learning.
+            </p>
+            <div class="author-block">
+              <img src="static/images/badge_jain.png" alt="Jain University" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Jain Deemed-to-be University</h4>
+                <span class="author-title">Sem 2: 9.00 SGPA • Sem 1: 8.625 SGPA</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Foundational Academics -->
+          <div class="testimonial-card">
+            <span class="card-quote-mark">“</span>
+            <p class="card-quote-text">
+              Demonstrated strong analytical problem-solving with 92.5% in 12th Standard and 83% in 10th Standard board examinations, establishing solid engineering foundations.
+            </p>
+            <div class="author-block">
+              <img src="static/images/badge_acad.png" alt="Academic Distinction" class="author-avatar">
+              <div class="author-info">
+                <h4 class="author-name">Academic Foundation</h4>
+                <span class="author-title">12th Grade: 92.5% • 10th Grade: 83%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section Divider -->
+      <hr class="editorial-divider">
+
+      <!-- SECTION 5: FOOTER & CONTACT (LET'S CREATE SOMETHING GREAT) -->
+      <footer class="contact-footer-section" id="contact">
+        <div class="footer-3col-grid">
+          
+          <!-- Left Column: Headline & Subtitle -->
+          <div class="footer-cta-col">
+            <span class="footer-cta-sub">LET'S CREATE</span>
+            <h2 class="footer-cta-title">SOMETHING GREAT</h2>
+            <p class="footer-cta-desc">
+              Have a project, internship, or full-time opportunity in mind? Let's build something that makes a lasting impact.
+            </p>
+            <div class="footer-strengths-tags">
+              <span class="strength-tag">Problem-solving</span>
+              <span class="strength-tag">Quick Learning</span>
+              <span class="strength-tag">Teamwork</span>
+              <span class="strength-tag">Adaptability</span>
+            </div>
+            
+            <div class="footer-action-row">
+              <a href="#inquiry" class="quick-inquiry-cta-btn" id="openModalBtn">
+                <span>SEND A QUICK MESSAGE</span>
+                <span class="btn-arrow">⟶</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Middle Column: QR Code + Arrow + Caption -->
+          <div class="footer-qr-col">
+            <div class="qr-box-wrapper">
+              <img src="static/images/qr_code.png" alt="Scan to connect with Chelamsetty Chaitanya" class="qr-image">
+              <div class="qr-pointer-block">
+                <svg class="curved-arrow-svg" viewBox="0 0 60 40" fill="none" stroke="currentColor">
+                  <path d="M 10,35 Q 25,5 50,20" stroke-width="2" stroke-linecap="round" fill="none"/>
+                  <path d="M 45,12 L 52,21 L 40,24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="qr-label-text">
+                  <span>SCAN TO CONNECT</span>
+                  <span>WITH ME DIRECTLY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Details with Icons -->
+          <div class="footer-contact-col">
+            <ul class="contact-list">
+              
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">EMAIL ADDRESS</span>
+                  <a href="mailto:chaithuniva44@gmail.com" class="contact-value">chaithuniva44@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">PHONE NUMBER</span>
+                  <a href="tel:6302183467" class="contact-value">+91 6302183467</a>
+                </div>
+              </li>
+
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">LOCATION</span>
+                  <span class="contact-value">Bengaluru, Karnataka (Remote / Worldwide)</span>
+                </div>
+              </li>
+
+              <li class="contact-row">
+                <div class="contact-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                </div>
+                <div class="contact-info">
+                  <span class="contact-label">CURRENT STUDY</span>
+                  <span class="contact-value">Jain Deemed-to-be University</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- SECTION: DIRECT INQUIRY CARD EMBEDDED (MATCHING USER SCREENSHOT) -->
+        <div class="inquiry-embed-container" id="inquiry">
+          <div class="direct-inquiry-card">
+            
+            <div class="inquiry-header">
+              <span class="inquiry-tag">DIRECT INQUIRY</span>
+              <h3 class="inquiry-title">Send a Quick Message</h3>
+              <p class="inquiry-sub">Drop a note and I will get back to you promptly.</p>
+            </div>
+
+            <form class="inquiry-form" id="pageInquiryForm">
+              
+              <div class="form-group">
+                <label for="pageUserName">YOUR NAME *</label>
+                <input 
+                  type="text" 
+                  id="pageUserName" 
+                  name="name" 
+                  placeholder="e.g. Elena Rostova" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="pageUserEmail">YOUR EMAIL *</label>
+                <input 
+                  type="email" 
+                  id="pageUserEmail" 
+                  name="email" 
+                  placeholder="e.g. elena@company.com" 
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="pageInquiryType">PURPOSE / INQUIRY TYPE</label>
+                <div class="select-wrapper">
+                  <select id="pageInquiryType" name="inquiry_type">
+                    <option value="Internship Opportunity" selected>Internship Opportunity</option>
+                    <option value="Job Opportunity">Job Opportunity</option>
+                    <option value="Project Collaboration">Project Collaboration</option>
+                    <option value="AI & Technical Discussion">AI & Technical Discussion</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                  </select>
+                  <span class="select-arrow" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="7 10 12 15 17 10"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="pageUserMessage">MESSAGE *</label>
+                <textarea 
+                  id="pageUserMessage" 
+                  name="message" 
+                  rows="4" 
+                  placeholder="Share project details, role descriptions, or greetings..." 
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-inquiry-btn" id="pageSubmitBtn">
+                <span>SEND MESSAGE</span>
+                <!-- Angled paper airplane icon matching screenshot -->
+                <svg class="send-plane-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+              </button>
+
+              <!-- Direct WhatsApp Instant Message Option -->
+              <div class="instant-text-option">
+                <span class="instant-text-label">Prefer instant text?</span>
+                <a 
+                  href="https://wa.me/916302183467" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="instant-whatsapp-link"
+                >
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.53 1.769.816 2.796.816 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm0-2.172c4.418 0 8 3.582 8 8 0 1.62-.48 3.12-1.31 4.39l1.279 4.61-4.72-1.24c-1.22.75-2.65 1.24-4.249 1.24-4.418 0-8-3.582-8-8 0-4.418 3.582-8 8-8z"/>
+                  </svg>
+                  <span>Chat directly on WhatsApp (+91 6302183467)</span>
+                </a>
+              </div>
+
+              <div class="form-feedback-status" id="pageFeedbackStatus"></div>
+
+            </form>
+
+          </div>
+        </div>
+
+        <!-- Bottom Copyright & Credit Strip -->
+        <div class="footer-bottom-bar">
+          <span>© 2026 CHELAMSETTY CHAITANYA. ALL RIGHTS RESERVED.</span>
+          <span>B.TECH ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</span>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- MODAL POPUP DIALOG (OPENS VIA FLOATING BUTTON OR QUICK LINKS) -->
+  <div class="modal-overlay" id="inquiryModal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog-content">
+      <div class="direct-inquiry-card modal-card">
+        <button class="modal-close-icon" id="closeModalBtn" aria-label="Close dialog">&times;</button>
+        
+        <div class="inquiry-header">
+          <span class="inquiry-tag">DIRECT INQUIRY</span>
+          <h3 class="inquiry-title">Send a Quick Message</h3>
+          <p class="inquiry-sub">Drop a note and I will get back to you promptly.</p>
+        </div>
+
+        <form class="inquiry-form" id="modalInquiryForm">
+          
+          <div class="form-group">
+            <label for="modalUserName">YOUR NAME *</label>
+            <input 
+              type="text" 
+              id="modalUserName" 
+              name="name" 
+              placeholder="e.g. Elena Rostova" 
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="modalUserEmail">YOUR EMAIL *</label>
+            <input 
+              type="email" 
+              id="modalUserEmail" 
+              name="email" 
+              placeholder="e.g. elena@company.com" 
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="modalInquiryType">PURPOSE / INQUIRY TYPE</label>
+            <div class="select-wrapper">
+              <select id="modalInquiryType" name="inquiry_type">
+                <option value="Internship Opportunity" selected>Internship Opportunity</option>
+                <option value="Job Opportunity">Job Opportunity</option>
+                <option value="Project Collaboration">Project Collaboration</option>
+                <option value="AI & Technical Discussion">AI & Technical Discussion</option>
+                <option value="General Inquiry">General Inquiry</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="7 10 12 15 17 10"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="modalUserMessage">MESSAGE *</label>
+            <textarea 
+              id="modalUserMessage" 
+              name="message" 
+              rows="4" 
+              placeholder="Share project details, role descriptions, or greetings..." 
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-inquiry-btn" id="modalSubmitBtn">
+            <span>SEND MESSAGE</span>
+            <svg class="send-plane-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </button>
+
+          <div class="instant-text-option">
+            <span class="instant-text-label">Prefer instant text?</span>
+            <a 
+              href="https://wa.me/916302183467" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="instant-whatsapp-link"
+            >
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.97.53 1.769.816 2.796.816 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.767-5.768-5.767zm0-2.172c4.418 0 8 3.582 8 8 0 1.62-.48 3.12-1.31 4.39l1.279 4.61-4.72-1.24c-1.22.75-2.65 1.24-4.249 1.24-4.418 0-8-3.582-8-8 0-4.418 3.582-8 8-8z"/>
+              </svg>
+              <span>Chat directly on WhatsApp (+91 6302183467)</span>
+            </a>
+          </div>
+
+          <div class="form-feedback-status" id="modalFeedbackStatus"></div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="static/js/main.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
